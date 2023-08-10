@@ -1,1 +1,2 @@
-# S201
+### Paradigmas class
+
