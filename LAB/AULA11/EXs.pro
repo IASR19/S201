@@ -1,4 +1,4 @@
-1) movie(M, 2006)
+1)movie(M, 2006)
 
 2)movie(M, Y), Y < 2002
 
