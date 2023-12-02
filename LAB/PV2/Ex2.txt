@@ -1,0 +1,15 @@
+2) Marque V ou F para as seguintes afirmativas sobre esse código em Common Lisp. Justifique ou corrija as falsas.
+
+( ) A lista c contém os resultados da aplicação da função b a cada número de 0 a 30.
+( ) A linha 12 retorna um erro na chamada da função a
+( ) A linha 13 imprimirá uma lista com 30 valores, sendo alguns deles: [1,2,3,4,5, ... ,30]. ( ) A lista e contém os elementos da lista d em ordem crescente.
+( ) A saída da linha 16 é o valor 9.
+
+
+RESPOSTAS:
+
+(V) -
+(F) Não há erro na linha 12, mas a função a está mal definida como (*xx); deve ser (* x x).
+(F) A linha 13 printa a função a, não a lista c
+(F) A lista e tem elementos de d em ordem decrescente, não crescente.
+(F) A saída da linha 16 não é 9. 

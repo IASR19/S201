@@ -1,0 +1,5 @@
+(defun cubo (x) (* x x x))
+(defun numeros-pares (inicio fim) (loop for i from inicio to fim by 2 collect i))
+(defparameter numeros (numeros-pares 1 50))
+(defparameter resultado (reduce #'+ (mapcar #'(lambda (x) (* x 2)) (mapcar #'cubo numeros))))
+(format t "Soma dos elementos: ~a" resultado)
