@@ -1,0 +1,34 @@
+
+1.1) (20pts) Quais os resultados para as seguintes consultas:
+a) resultado(marcelo, X). 
+b) falta(X, Y), Y>0.
+c) reprovado(vinicius). 
+d) falta(X, 0).
+
+RESPOSTAS:
+
+A) x = 10
+
+B)  X=ewel, Y=2 ;
+    X=edmundo, Y=5 ;
+    X=joao, Y=3 ;
+    X=alvaro, Y=2 ;
+    X=felipe, Y=6 ;
+    X=samuel, Y=4
+
+C) False
+
+D)  X=matheus;
+    X=vinicius;
+    X=gabriel;
+    X=marcelo
+
+_______________________________________________________________________________________
+
+1.2) (20pts) Crie uma regra para verificar alunos exemplares, que tenham nota maior que 8 e até 1 falta.
+
+alunoExemplar(X) :-
+    resultado(X, Nota),
+    falta(X, Faltas),
+    Nota > 8,
+    Faltas =< 1
