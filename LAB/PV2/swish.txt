@@ -1,0 +1,26 @@
+% fatos
+resultado(ewel, 5).
+resultado(matheus, 9).
+resultado(vinicius, 8).
+resultado(edmundo, 7).
+resultado(joao, 6).
+resultado(gabriel, 8).
+resultado(alvaro, 7).
+resultado(felipe, 4).
+resultado(samuel, 2).
+resultado(marcelo, 10).
+falta(ewel, 2).
+falta(matheus, 0).
+falta(vinicius, 0).
+falta(edmundo, 5).
+falta(joao, 3).
+falta(gabriel, 0).
+falta(alvaro, 2).
+falta(felipe, 6).
+falta(samuel, 4).
+falta(marcelo, 0).
+
+% regras
+reprovado(X) :-
+	resultado(X, Nota),
+	(Nota < 6 ; (falta(X, F), F > 3)).
